@@ -1,6 +1,16 @@
-# trains
-Python 3.5.2 implementation of trains kata:
+# Trains
+Python 3.5.2 implementation of trains kata.
 
+To run unit tests, execute `python -m unittest` in the 'trains' directory.
+
+To run interactively, execute `python -i` in the 'trains' directory.  You can then enter commands such as:
+```
+import src.train_graph as tg
+my_routes = tg.TrainGraph("AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7")
+my_routes.get_distance("A-B")
+```
+
+# Description
 A local commuter railroad services a number of towns in Kiwiland.  Because of monetary concerns, all of the tracks are 'one-way.'
 That is, a route from Kaitaia to Invercargill does not imply the existence of a route from Invercargill to Kaitaia.  In fact, even if both of these routes do happen to exist, they are distinct and are not necessarily the same distance!
 
